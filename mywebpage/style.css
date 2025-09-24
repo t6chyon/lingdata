@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', sans-serif;
+    line-height: 1.5;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/* шапка */
+.header-nav {
+    background: #dc3545;
+    padding: 12px 0;
+}
+
+.nav-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.nav-menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.nav-menu a:hover {
+    text-decoration: underline;
+}
+
+.school-link {
+    font-weight: bold;
+}
+
+/* страничка */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+.main-header {
+    background: white;
+    padding: 30px;
+    margin-bottom: 30px;
+    border: 1px solid #ddd;
+}
+
+.profile-photo {
+    width: 200px;
+    height: 200px;
+}
+
+h1 {
+    color: #dc3545;
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    color: #666;
+    font-size: 16px;
+}
+
+.section {
+    background: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+}
+
+.section h2 {
+    color: #dc3545;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.section p {
+    margin-bottom: 12px;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+    margin: 15px 0;
+}
+
+.info-item {
+    background: #f8f8f8;
+    padding: 12px;
+    border-bottom: 2px solid #dc3545;
+}
+
+.info-item strong {
+    display: block;
+    color: #333;
+    margin-bottom: 4px;
+}
+
+.contacts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.contact-link {
+    padding: 8px 16px;
+    background: #dc3545;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.contact-link:hover {
+    background: #c82333;
+}
+
+.languages {
+    font-size: 15px;
+    color: #555;
+}
+
+/* адаптивка */
+@media (max-width: 768px) {
+    .nav-menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .container {
+        padding: 20px 15px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .main-header, .section {
+        padding: 20px;
+    }
+
+    .contacts {
+        flex-direction: column;
+    }
+
+    .contact-link {
+        text-align: center;
+    }
+}

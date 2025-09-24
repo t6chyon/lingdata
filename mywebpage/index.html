@@ -1,124 +1,80 @@
-<!doctype html>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>личная страница вари ✰</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Шапка с навигацией -->
+    <header class="header-nav">
+        <div class="nav-container">
+            <nav class="nav-menu">
+                <a href="https://ling.hse.ru" class="school-link">школа лингвистики НИУ ВШЭ</a>
+                <a href="https://www.hse.ru/ba/ling/">сайт программы</a>
 
-<!-- так в HTML обозначаются комментарии. Выше вы видите объявление типа документа (DOCTYPE), так браузер понимает, что код ниже нужно интерпретировать как html -->
+            </nav>
+        </div>
+    </header>
 
-<html>
+    <div class="container">
+        <header class="main-header">
+            <img src="это вообще кто.png" class="profile-photo">
+            <h1>варя лозовых ♡</h1>
+            <p class="subtitle">hse fundamental and computer linguistics '28</p>
+        </header>
 
-<!-- зона заголовка html, тег <title> - строка, которую браузер отображает на вкладках над страницами, <meta> и <link> сообщают технические сведения для браузера, например, что файл имеет кодировку Юникод (utf-8) -->
+        <section class="section">
+            <h2>обо мне ♡</h2>
+            <p>привет! я первокурсница ФИКЛа в НИУ ВШЭ. до поступления активно участвовала в олимпиадах по английскому языку - стала <strong>трёхкратным призёром ВСОШ</strong> и несколько раз занимала призовые места на перечневых олимпиадах.</p>
+            
+            <p>сейчас в рамках университета изучаю <em>финский язык</em> - он очень отличается от привычных индоевропейских языков, что делает его особенно интересным для понимания того, как работают языковые системы. а ещё он просто прикольный</p>
+        </section>
 
-	<head>
-		<title>Личная страница Веры Кузнецовой</title>
-	 	<!-- Required meta tags -->
-	 	<meta charset="utf-8">
-	 	<meta name="viewport" content="width=device-width, initial-scale=1">
+        <section class="section">
+            <h2>интересы ♡</h2>
+            <p><strong>компьютерная лингвистика</strong> - не могу в точности объяснить, что именно интересно, но меня очень интересует компьютерная лингвистика!!!! с 9 класса я мечтала поступить сюда на бюджет - и эта мечта сбылась</p>
+            
+            <p><strong>психология</strong> - мне интересно, почему люди поступают так, как поступают; интересно что-то узнать и про себя</p>
+            
+            <p><strong>музыка</strong> - любимые жанры - экспериментальный хип-хоп, эмбиент, idm, midwest emo, math rock; любимые группы - death grips, brave little abacus, radiohead, swans, black midi. иногда играю на синтезаторе. мечтаю научиться играть на барабанах, но пока нет времени</p>
 
-		<meta name="description" content="Личная страница и контакты">
+            <p><strong>коллекционирование</strong> - фигурки, прочий мерч, диски, немного монет</p>
 
-		<!-- Bootstrap Core CSS -->
-		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" media="screen">
-<!-- Эта страница сделана с помощью bootstrap - популярной библиотеки для создания и настройки сайтов. Ниже вы увидите, что многие теги содержат атрибуты class - bootstrap содержит шаблоны, как такие элементы красиво оформить -->
+            <div class="languages">
+                <strong>языки:</strong> русский (родной), английский (C2), финский (A1), из языков программирования - html, немного javascript
+            </div>
+        </section>
 
-	</head>
-	
-<!-- body - главная, содержательная часть страницы. Контент на этой странице делится на меню (nav), "шапку" (header), "подвал" (footer) и все остальное (мы заключили остаток в тег section) -->	
-	<body>
+        <section class="section">
+            <h2>личное ♡</h2>
+            <div class="info-grid">
+                <div class="info-item">
+                    <strong>родной город</strong>
+                    <span>дубна, московская область</span>
+                </div>
+                <div class="info-item">
+                    <strong>школа</strong>
+                    <span>областная гимназия им. Е.М. Примакова</span>
 
-<!-- меню (navigation bar) -->
+                </div>
+                <div class="info-item">
+                    <strong>факультет</strong>
+                    <span>факультет гуманитарных наук</span>
+                </div>
+            </div>
+        </section>
 
-		<nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
-
-<!-- div - это контейнеры - коробочки с текстом и/или графикой, которые можно вкладывать друг в друга. Пристально смотреть на теги в этой части кода не нужно -->
-			<div class="container"> 
-				<div class="navbar-header"> 
-					<a href="https://ling.hse.ru/" class="navbar-brand">Школа лингвистики НИУ ВШЭ</a> 
-				</div> 
-				<nav class="collapse navbar-collapse" id="bs-navbar"> 
-					<ul class="nav navbar-nav navbar-right"> 
-						<li> <a href="https://lingvocodes.github.io/HSEinfo/ba-ling-2021/index.html">Страница курса</a> </li> 
-						<li> <a href="https://lingvocodes.github.io/HSEinfo/ba-ling-2021/latin_2.html">Страница группы</a> </li> 
-<!-- поправьте номер группы в URL, если нужно (от 1 до 4) -->
-					</ul>
-				</nav> 
-			</div>
-		</nav>
-
-<!-- начинается шапка. у тега header есть атрибут style, который задает цвет фона и отступы. поменяйте значения атрибутов и посмотрите, как изменится страница -->
-
-		<header style="background-color:plum; padding-top:70px; "> 
-			<div class="container"> 
-				<div class="row">
-					<div class="col-md-4">
-						<br><br>
-<!-- здесь и дальше нужно поменять весь содержательный текст, чтобы получилась ваша личная страница -->
-						<h1>Вера Кузнецова</h1>
-						<hr> <!-- это горизонтальная линия -->
-						<p><i>Человек, умеющий <b>создавать</i> HTML</b></p> 
-					</div>
-					<div class="col-md-4">
-<!-- img - тег для вставки изображений. Мы использовали атрибут style, чтобы задать размер изображения и ширину рамки-->
-<!-- Измените URL на URL вашей фотографии, а также настройте размер изображения -->
-<img src="myphoto.jpg" style="height:320px; margin:20px 20px 40px 20px; " >
-					</div>
-				</div>
-			</div>
-		</header>
-
-<!-- часть страницы, которая под шапкой -->
-		<section id="portfolio">
-			<div class="container">
-
-<!-- атрибут col-md-... говорит, что контент будет разделен на несколько столбцов, их ширина соотносится как 3 - 6 - 3 (Bootstrap использует воображаемую сетку из 12 равных по ширине колонок) -->
-				<div class="col-md-3">
-
-<!-- <article> не влияет на оформление, но помогает структурировать контент на осмысленые разделы -->
-					<article>
-						<h3>Место учебы</h3>
-						<p>Фундаментальная и прикладная лингвистика, НИУ ВШЭ, Москва</p>
-					</article>
-					<article>
-						<h3>Родной город</h3>
-						<p>Москва</p>
-					</article>
-					<article>
-						<h3>Школа</h3>
-<!-- когда будете менять текст, не используйте бюрократических слов типа ГБОУ СОШ, ну пожаалуйста -->
-						<p>СУНЦ НГУ</p>
-					</article>
-				</div>
-
-				<div class="col-md-6">
-					<article>
-						<h3>Тут можно написать</h3>
-						<p>Еще много много много много много много <br>
-						много <br>
-						много <br>
-						много <br>
-						много <br>
-						много <br>
-						много <br>
-						много <br>
-						всего о себе</p>
-					</article>
-				</div>
-
-				<div class="col-md-3">
-					<h3>Я в соцсетях</h3>
-<!-- тег <ul> - unordered list. Еще бывает тег <ol> -->
-					<ul>
-						<li>VK</li>
-						<li>Discord</li>
-						<li>Telegram</li>
-					</ul>
-				</div>
-			</div>
-		</section>
-
-<!-- это подвал. В этой части страницы обычно ставят копирайт (с помощью символа &copy;) и пишут об истории создания страницы. Поставьте свой копирайт -->
-		<footer class="bs-docs-footer"> 
-			<div class="container"> 
-				<p style="text-align:right; ">&copy; В. Кузнецова, 2024</p> 
-			</div>
-		</footer>
-	</body>
-
+        <section class="section">
+            <h2>контакты ♡</h2>
+            <p>обращайтесь по любым вопросам!</p>
+            <div class="contacts">
+                <a href="https://t.me/maripilled" class="contact-link">telegram</a>
+                <a href="mailto:vamilozovykh@edu.hse.ru" class="contact-link">email</a>
+                <a href="https://github.com/t6chyon" class="contact-link">github</a>
+            </div>
+        </section>
+    </div>
+</body>
 </html>
